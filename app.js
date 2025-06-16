@@ -15,9 +15,9 @@ app.use(bodyParser.json());
 app.use(express.static(path.join(__dirname, '/')));
 app.use(cors())
 
-mongoose.connect('mongodb+srv://cluster0.f5jh9yc.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0', {
-    user: 'rana01',
-    pass: 'rana01',
+mongoose.connect('mongodb+srv://rana01:rana01@cluster0.f5jh9yc.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0', {
+    //user: 'rana01',
+    //pass: 'rana01',
     useNewUrlParser: true,
     useUnifiedTopology: true
 }, function(err) {
